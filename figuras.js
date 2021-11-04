@@ -40,6 +40,26 @@ console.groupEnd();
 
 // Código del calculo de perimetro y área de una círculo
 
-console.group("círculo"); 
+console.group("Círculo"); 
+
+// Radio
+const radioCirculo = 4;
+console.log("El radio del circulo es: " + radioCirculo + "cm");
+
+// Diámetro
+const diámetroCirculo = radioCirculo * 2;
+console.log("El diámetro del circulo es: " + diámetroCirculo + "cm");
+
+// PI
+const PI = Math.PI; // Math tiene varias herramientas
+console.log("PI es: " + PI);
+
+// Perimetro
+const perimetroCirculo = diámetroCirculo * PI;
+console.log("El perimetro del circulo es: " + perimetroCirculo+ "cm");
+
+// Área
+const areaCirculo = PI * (radioCirculo * radioCirculo);
+console.log("El área del circulo es: " + areaCirculo + "cm2");
 
 console.groupEnd();
