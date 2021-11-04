@@ -78,3 +78,30 @@ function areaCirculo(radio) {
 }
 
 console.groupEnd();
+
+// Interaccion con HTML
+
+function calcularPerimetroCuadrado() {     
+    const input = document.getElementById("InputCuadrado") 
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);            
+    alert(perimetro);                                                   
+}
+
+// el document.getElementById("...") nos sirve para buscar dentro de un documento, un elemento con un ID 
+// con esta variable input voy a obtener el input de HTML por su vinculacion con el ID
+// Si queremos que el usuario calcule, necesitamos su valor, haremos lo siguiente
+// Para obtener el valor que ingrese el usuario, para eso vamos a generar una variable que tenga como 
+// valor la variable anterior ( input ), llamamos a su propiedad value y asi obtenemos el valor del usuario
+// Ahora vamos a definir el perimetro del cuadrado, generado por una nueva variable que tenga como valor 
+// la funcion que definimos antes perimetroCirculo() y tendra como parametro la variable creada 
+// anteriormente value y para finalizar vamos a generar una alerta para colocar el resultado de la variable perimetro
+                                                           
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado") 
+    const value = input.value;
+
+    const area = areaCuadrado(value);        donde     
+    alert(area);   
+}
